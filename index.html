@@ -4,14 +4,60 @@
   <meta charset="UTF-8">
   <title>Визитка Айым</title>
   <link rel="stylesheet" href="style.css">
+  <script src="translations.js"></script>
 </head>
 <body>
-  <h1>Привет! 👋s</h1>
-  <p>Я — Айым, графический дизайнер.</p>
-  <p>Instagram: <a href="https://instagram.com/твойник" target="_blank">мой профиль</a></p>
-  <p>Telegram: <a href="https://t.me/твойник" target="_blank">написать мне</a></p>
+  <main>
+    <div class="center language">
+      <button id="kz-button" onclick="changeLanguage('kz')">
+        Қазақша
+      </button>
+      <button id="ru-button" onclick="changeLanguage('ru')">
+        На русском
+      </button>
+      <button id="en-button" onclick="changeLanguage('en')">
+        in english
+      </button>
+    </div>
 
-  <button onclick="sayHi()">Нажми меня</button>
+    <div class="center">
+      <img src="logo.jpg" class="logo">
+      <p class="logo" id="description"></p>
+    </div>
+
+    <div class="center">
+      <h1 class="name" id="full-name"></h1>
+      <p class="logo no-margin" id="user-description"></p>
+    </div>
+
+    <div class="center" 
+      style="
+      margin-block: 20px; 
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;">
+      <hr>
+      <img src="arrow-down.svg" width="16px" height="16px">
+      <hr>
+    </div>
+
+    <br>
+
+    <div class="center" style="gap:10px">
+      <!-- Ссылка для WhatsApp -->
+      <a id="whatsapp-link" class="button whatsapp" href="#" target="_blank">
+        <img src="whatsapp.svg" width="24px" height="24px">
+        <span id="whatsapp-text"></span>
+        <p></p>
+      </a>
+      <!-- Ссылка для почты -->
+      <a id="mail-link" class="button mail" href="#" target="_blank">
+        <img src="mail.svg" width="24px" height="24px">
+        <span id="mail-text"></span>
+        <p></p>
+      </a>
+    </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
