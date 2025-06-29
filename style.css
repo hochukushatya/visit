@@ -1,14 +1,91 @@
+html{
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f7f9fc;
-  color: #333;
-  padding: 40px;
+  padding: 25px 0;
+}
+
+main{
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+div.center{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.center.language{
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+img.logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+p.logo{
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  font-weight: semi-bold;
+
+  margin-top: 10px;
+}
+
+p.no-margin{
+  margin: 0;
+}
+
+h1.name{
+  color: #ffd800;
+  text-transform: uppercase;
+  margin-bottom: 0;
   text-align: center;
 }
 
-a {
-  color: #0077cc;
+hr{
+  width: 75px;
+  border-color: white;
+  margin: 0;
+}
+
+a.button{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 25px;
+  align-items: center;
+  box-sizing: border-box;
   text-decoration: none;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 50px;
+
+  color: white;
+}
+
+a.button.whatsapp{
+  background-color: #2cb742;
+}
+
+a.button.mail{
+  background-color: #398ab3;
 }
 
 a:hover {
@@ -16,10 +93,9 @@ a:hover {
 }
 
 button {
-  margin-top: 20px;
   padding: 10px 20px;
   border: none;
-  background-color: #ff8ba7;
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
   font-size: 16px;
   border-radius: 8px;
@@ -28,5 +104,9 @@ button {
 }
 
 button:hover {
-  background-color: #ff6789;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+button.active{
+  background-color: rgba(255, 255, 255, 0.3);
 }
